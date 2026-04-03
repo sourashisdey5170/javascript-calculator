@@ -1,0 +1,195 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #1c1c1c, #3a3a3a);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: #fff;
+}
+
+.main-container {
+  width: 55vw;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 2vh;
+}
+
+.nav-pills .nav-link {
+  background-color: #444;
+  color: white;
+  border-radius: 10px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #007bff;
+}
+
+.calculator {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2vw;
+  border-radius: 1.5vw;
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.5);
+}
+
+.display {
+  background: #000;
+  color: #0f0;
+  font-size: 2vw;
+  padding: 2vh;
+  text-align: right;
+  border-radius: 1vw;
+  margin-bottom: 2vh;
+  min-height: 6vh;
+  line-height: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+#display::-webkit-scrollbar {
+  height: 6px;
+}
+
+#display::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1vw;
+}
+
+.btn {
+  font-size: 1.5vw;
+  padding: 1.2em;
+  border: none;
+  border-radius: 1vw;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+.gray {
+  background-color: #666;
+}
+
+.operator {
+  background-color: #007bff;
+}
+
+.operator:hover {
+  background-color: #0056b3;
+}
+
+.erase {
+  background-color: #dc3545;
+}
+
+.erase:hover {
+  background-color: #a71d2a;
+}
+
+.sticky-btn {
+  margin-top: 1vh;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 3vw;
+  height: 3vw;
+  font-size: 1.5vw;
+  cursor: pointer;
+  margin-left: -14px;
+}
+
+/* .sticky-btn:hover {
+  background-color: #0056b3;
+} */
+
+.history-container {
+  background: #1c1c1c;
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #444;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#closeHistoryBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
+#historyList li {
+  border-bottom: 1px solid #444;
+  padding: 5px 0;
+}
+
+.converter {
+  background: rgba(255, 255, 255, 0.226);
+  border: 1px solid #f6f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.converter h4 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.converter-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.converter-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+}
+
+.converter-row select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.converter button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+.converter button:hover {
+  background-color: #0056b3;
+}
